@@ -1,0 +1,6 @@
+framework module Pods_CockcrowTests {
+  umbrella header "Pods-CockcrowTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

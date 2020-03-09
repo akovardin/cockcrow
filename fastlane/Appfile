@@ -1,0 +1,8 @@
+app_identifier("ru.4gophers.Cockcrow") # The bundle identifier of your app
+apple_id("artem.kovardin@gmail.com") # Your Apple email address
+
+itc_team_id("119201219") # App Store Connect Team ID
+team_id("25K6PDW2HY") # Developer Portal Team ID
+
+# For more information about the Appfile, see:
+#     https://docs.fastlane.tools/advanced/#appfile
