@@ -11,7 +11,6 @@
 		58C7A0B2C04BAA75F8A98A24 /* AlarmModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C7ADF7AB7684E5B7051619 /* AlarmModelTest.swift */; };
 		58C7A0C6D21F80A835E565EB /* MainWorkerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C7ADF8603E968749CCE15B /* MainWorkerTests.swift */; };
 		58C7A1C6EE8E966A1945693D /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C7A8650409CB2BDF4D63C7 /* MainPresenter.swift */; };
-		58C7A1D9D8E5410148A098B6 /* EditButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C7A5648E7927DDB25E6D9C /* EditButton.swift */; };
 		58C7A347A60B251290FF360E /* MainInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C7A70F41F414E57F9F7562 /* MainInteractorTests.swift */; };
 		58C7A392EED95E2774EA2AB0 /* Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C7A473EA0B2F4AB1F5A08E /* Style.swift */; };
 		58C7A3B05A5D8DB75E82DA5B /* Fastfile in Resources */ = {isa = PBXBuildFile; fileRef = 58C7A01E6A499A674B525411 /* Fastfile */; };
@@ -95,7 +94,6 @@
 		58C7A2CFA324AF4904833B53 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		58C7A378991E5218563A9D00 /* MainRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainRouter.swift; sourceTree = "<group>"; };
 		58C7A473EA0B2F4AB1F5A08E /* Style.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Style.swift; sourceTree = "<group>"; };
-		58C7A5648E7927DDB25E6D9C /* EditButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditButton.swift; sourceTree = "<group>"; };
 		58C7A70F41F414E57F9F7562 /* MainInteractorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainInteractorTests.swift; sourceTree = "<group>"; };
 		58C7A752366BC875C5A0CCE3 /* MainWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainWorker.swift; sourceTree = "<group>"; };
 		58C7A7B986A49CF7930622ED /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -269,14 +267,6 @@
 			path = Main;
 			sourceTree = "<group>";
 		};
-		58C7AE850B5FD81F1A762CCD /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				58C7A5648E7927DDB25E6D9C /* EditButton.swift */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
 		58C7AEE2F3E7F32E2ABD7F93 /* fastlane */ = {
 			isa = PBXGroup;
 			children = (
@@ -345,7 +335,6 @@
 				58C7A21A590C48B2630ACE4E /* Notifications */,
 				58C7A473EA0B2F4AB1F5A08E /* Style.swift */,
 				58C7A47F247860A6E44B0F24 /* Services */,
-				58C7AE850B5FD81F1A762CCD /* Views */,
 				58C7AFED51EF95E8FB8FC140 /* Scenes */,
 			);
 			path = Cockcrow;
@@ -679,7 +668,6 @@
 				AC7789C8240C131900CCB021 /* SettingsPresenter.swift in Sources */,
 				58C7A540AD39034E3C240584 /* AlarmService.swift in Sources */,
 				AC7789CC240C131900CCB021 /* SettingsViewController.swift in Sources */,
-				58C7A1D9D8E5410148A098B6 /* EditButton.swift in Sources */,
 				58C7A1C6EE8E966A1945693D /* MainPresenter.swift in Sources */,
 				58C7ABC1A3570DA8837FA15A /* MainWorker.swift in Sources */,
 				58C7A5B2D1793191CDABD04D /* MainRouter.swift in Sources */,
