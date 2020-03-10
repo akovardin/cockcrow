@@ -50,31 +50,19 @@ class AlarmService {
     // MARK: Main logic
 
     public func run(completion: @escaping (AlarmModel?) -> Void) {
-        do {
-            try AVAudioSession.sharedInstance().setCategory(.playback,
-                    mode: .default,
-                    options: [.duckOthers])
-            // options: [.mixWithOthers, .allowAirPlay]
-            print("Playback OK")
-            try AVAudioSession.sharedInstance().setActive(true)
-            // 30-minutes-of-silence.mp3
-            playTrack(track: "https://4gophers.ru/30-minutes-of-silence.mp3")
-            print("Session is Active")
-        } catch {
-            print(error)
-        }
+        playTrack(track: "https://4gophers.ru/silent.mp3")
 
         DispatchQueue.global(qos: .background).async { [weak self] in
             while true {
                 sleep(1)
                 if self?.check() ?? false {
                     print("start alarm")
-                    self?.start()
                     DispatchQueue.main.async {
+                        self?.start()
                         completion(self?.fetch())
                     }
 
-                    sleep(60)
+                    sleep(120)
                 }
             }
         }
@@ -92,7 +80,7 @@ class AlarmService {
         update(model)
 
         played = false
-        player.pause()
+        playTrack(track: "https://4gophers.ru/silent.mp3")
 
         completion(model)
     }

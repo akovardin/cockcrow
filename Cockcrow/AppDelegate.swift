@@ -9,12 +9,21 @@
 import UIKit
 import CoreData
 import UserNotifications
+import AVFoundation
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+
+        let session = AVAudioSession.sharedInstance()
+        do {
+            try session.setActive(true)
+            try session.setCategory(.playback, mode: .default)
+        } catch let error as NSError {
+            print("Setting category to AVAudioSessionCategoryPlayback failed: \(error)")
+        }
 
         UNUserNotificationCenter.current().getNotificationSettings { settings in
             if settings.authorizationStatus == .notDetermined {
