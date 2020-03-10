@@ -167,6 +167,8 @@ class MainViewControllerTests: XCTestCase {
 
         // Then
         XCTAssertEqual(controller.stopButton.isHidden, true)
+        XCTAssertEqual(controller.timeLabel.text, "")
+        XCTAssertEqual(controller.dateLabel.text, "")
     }
 
     func testRouteToSettings() {
