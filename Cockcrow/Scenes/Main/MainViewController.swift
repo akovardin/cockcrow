@@ -134,6 +134,8 @@ class MainViewController: UIViewController, MainDisplayLogic {
             dateLabel.text = model.formatDate() ?? ""
         case .displayStop:
             stopButton.isHidden = true
+            timeLabel.text = ""
+            dateLabel.text = ""
         case .displayRing:
             stopButton.isHidden = false
         }
