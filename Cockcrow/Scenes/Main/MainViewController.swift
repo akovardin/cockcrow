@@ -146,23 +146,23 @@ class MainViewController: UIViewController, MainDisplayLogic {
     func setupViews() {
         view.addSubview(titleLabel)
         NSLayoutConstraint.activate([
-            titleLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 73),
-            titleLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -73),
-            titleLabel.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: -130)
+            titleLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
+            titleLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
+            titleLabel.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 100)
         ])
 
         view.addSubview(timeLabel)
         NSLayoutConstraint.activate([
-            timeLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 73),
-            timeLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -73),
-            timeLabel.centerYAnchor.constraint(equalTo: view.centerYAnchor)
+            timeLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
+            timeLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
+            timeLabel.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 20)
         ])
 
         view.addSubview(dateLabel)
         NSLayoutConstraint.activate([
-            dateLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 73),
-            dateLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -73),
-            dateLabel.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: 130)
+            dateLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
+            dateLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
+            dateLabel.topAnchor.constraint(equalTo: timeLabel.bottomAnchor, constant: 20)
         ])
 
         view.addSubview(settingsButton)
@@ -175,9 +175,9 @@ class MainViewController: UIViewController, MainDisplayLogic {
 
         view.addSubview(stopButton)
         NSLayoutConstraint.activate([
-            stopButton.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -150),
-            stopButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 73),
-            stopButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -73),
+            stopButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -100),
+            stopButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
+            stopButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
             stopButton.heightAnchor.constraint(equalToConstant: 89)
         ])
     }
