@@ -50,7 +50,7 @@ class AlarmService {
     // MARK: Main logic
 
     public func run(completion: @escaping (AlarmModel?) -> Void) {
-        playTrack(track: "https://4gophers.ru/silent.mp3")
+        play(track: "https://4gophers.ru/silent.mp3")
 
         DispatchQueue.global(qos: .background).async { [weak self] in
             while true {
@@ -80,7 +80,7 @@ class AlarmService {
         update(model)
 
         played = false
-        playTrack(track: "https://4gophers.ru/silent.mp3")
+        play(track: "https://4gophers.ru/silent.mp3")
 
         completion(model)
     }
@@ -88,7 +88,7 @@ class AlarmService {
     // MARK: Helpers
 
     private func start() {
-        playTrack(track: "https://4gophers.ru/outputfile.mp3")
+        play(track: "https://4gophers.ru/outputfile.mp3")
         played = true
     }
 
@@ -104,7 +104,10 @@ class AlarmService {
         return model.isTimeToRing()
     }
 
-    private func playTrack(track url: String?) {
+    private func play(track url: String?) {
+//        AVAudioPlayer(contentsOf: <#T##URL##Foundation.URL#>)
+
+
         guard let u = URL(string: url ?? "") else {
             return
         }
