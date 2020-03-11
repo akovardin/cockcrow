@@ -176,8 +176,8 @@ class MainViewController: UIViewController, MainDisplayLogic {
         view.addSubview(stopButton)
         NSLayoutConstraint.activate([
             stopButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -100),
-            stopButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
-            stopButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
+            stopButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 60),
+            stopButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -60),
             stopButton.heightAnchor.constraint(equalToConstant: 89)
         ])
     }
